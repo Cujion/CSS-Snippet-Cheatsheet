@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Snippet Cheatsheet Wireframe</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" >
+    <link rel="stylesheet" href="./assets/css/style.css" >
+</head>
+<body>
+    <header>
+        <h1>CSS Snippet Cheatsheet Wireframe</h1>
+    </header>
+    <section>
+        <h2><p>
+            Have you ever been stuck searching the web trying to figure out grid properties? Well look no further, This is a handy cheatsheet to help you understand how grid properties work.
+        </p></h2>
+    </section>
+    <section>
+        <article class="box">
+            <div class="title">
+                <h2><p>Grid Template Rows</p></h2>
+            </div>
+            <div class="description">
+                <p>Specifies the size(s) of the rows. The values listed are separated by spaces and each value defines specific height values of the corresponding row.</p>
+            </div>
+            <div class="body">
+                <pre><code>  
+.grid-container {
+display: grid;
+grid-template-rows: 100px 300px;
+}
+                </pre></code>
+            </div>
+        </article>
+        <article class="box">
+            <div class="title">
+                <h2><p>Grid Template Columns</p></h2>
+            </div>
+            <div class="description">
+                <p>Specifies the size(s) of the columns. The values listed are separated by spaces and each value defines specific height values of the corresponding column.</p>
+            </div>
+            <div class="body">
+                <pre><code>  
+.grid-container {
+display: grid;
+grid-template-columns: auto auto auto auto;
+}
+                </pre></code>
+            </div>
+        </article>
+        <article class="box">
+            <div class="title">
+                <h2><p>Grid Template Areas</p></h2>
+            </div>
+            <div class="description">
+                <p>Specifies the grid layout using named items. The grid-area property can be used to name grid items and then reference that name in the grid-template-areas property. Using a period sign will refer to a grid item with no name.</p>
+            </div>
+            <div class="body">
+                <pre><code>  
+.item1 {
+grid-area: myArea;
+}
+.grid-container {
+display: grid;
+grid-template-areas: "myArea myArea . . .";
+}
+                </pre></code>
+            </div>
+        </article>
+        <article class="box">
+            <div class="title">
+                <h2><p>Grid Auto Rows</p></h2>
+            </div>
+            <div class="description">
+                <p>Property sets a size for the rows in a grid container. This property will only affect the rows where the size is not set.</p>
+            </div>
+            <div class="body">
+                <pre><code>  
+.grid-container {
+display: grid;
+grid-auto-rows: 150px;
+}
+                </pre></code>
+            </div>
+        </article>
+        <article class="box">
+            <div class="title">
+                <h2><p>Grid Auto Columns</p></h2>
+            </div>
+            <div class="description">
+                <p>Property sets a size for the columns in a grid container. This property will only affect the rows where the size is not set.</p>
+            </div>
+            <div class="body">
+                <pre><code>   
+.grid-container {
+display: grid;
+grid-auto-columns: 50px;
+}
+                </pre></code>
+            </div>
+        </article>
+        <article class="box">
+            <div class="title">
+                <h2><p>Grid Auto Flow</p></h2>
+            </div>
+            <div class="description">
+                <p>Property controls how auto-placed items get inserted in the grid.</p>
+            </div>
+            <div class="body">
+                <pre><code>    
+.grid-container {
+display: grid;
+grid-auto-flow: column;
+}
+                </pre></code>
+            </div>
+        </article>
+    </section>
+    <footer>
+        <p>
+            Made with &#10084, HTML & CSS !
+        </p>
+    </footer>
+</body>
+</html>
