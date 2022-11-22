@@ -42,7 +42,7 @@ article{
     margin: 16px;
     text-align: center;
     border: 2px dotted #ef233c;
-    height: 300px;
+    height: 350px;
 
 }
 
@@ -82,14 +82,13 @@ article{
 .description{
     color: #2b2d42;
     padding: 12px;
-    margin-top: 16px;
 }
 
 .body{
     background-color: #2b2d42;
     border-radius: 20px;
     color: #edf2f4;
-    padding: 8px;
+    padding: 6px;
     flex: 1;
 }
 
